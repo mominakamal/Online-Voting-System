@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Online Voting Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <span class="logo">Online Voting</span>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </div>
+    <div class="sidebar">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="container">
+        <h2>Register</h2>
+        <form action="login.html" enctype="multipart/form-data">
+            <input type="text" name="fullname" placeholder="Full Name" required pattern="[A-Za-z ]+" title="Only letters and spaces allowed">
+            <input type="text" name="cnic" placeholder="CNIC Number (13 digits)" required pattern="\d{13}" minlength="13" maxlength="13" inputmode="numeric" title="Enter 13 digit CNIC number (numbers only)">
+            <input type="email" name="email" placeholder="Email Address" required title="Enter a valid email address">
+            <input type="password" name="password" placeholder="Password (min 8 characters)" required minlength="8" title="Password must be at least 8 characters">
+            <select name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="date" name="dob" placeholder="Date of Birth" required max="2006-06-07">
+            <div style="font-size:0.95rem; color:#178a3a; margin-top:-10px; margin-bottom:10px;">You must be at least 18 years old to register.</div>
+            <label for="idcard" style="font-size:0.98rem; color:#14532d; margin-bottom:4px;">Upload Identity Card (jpg, jpeg, png):</label>
+            <input type="file" id="idcard" name="idcard" accept="image/png, image/jpeg, image/jpg" required>
+            <input type="submit" value="Submit">
+        </form>
+        <p style="text-align:center; margin-top:16px;">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <div class="footer">
+        &copy; 2024 Online Voting Application &mdash; Contact: info@votingapp.com
+    </div>
+</body>
+</html> 

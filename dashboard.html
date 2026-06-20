@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Online Voting Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <span class="logo">Online Voting</span>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </div>
+    <div class="sidebar">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="container">
+        <h2>Dashboard</h2>
+        <p>Choose your candidate and cast your vote:</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
+            <div class="candidate-card" style="flex-direction: column; align-items: flex-start;">
+                <img src="img.pgg.jpeg" alt="Imran Khan">
+                <span class="candidate-photo" style="font-size:2rem;">🏏</span>
+                <span class="candidate-name">Imran Khan</span>
+                <span class="candidate-party">PTI</span>
+                <span class="candidate-party">Symbol: Bat</span>
+                <a href="vote-confirm.html"><button style="margin-top:12px; width:100%;">Vote</button></a>
+            </div>
+            <div class="candidate-card" style="flex-direction: column; align-items: flex-start;">
+                <img src="imggg.pg.jpeg" alt="Nawaz Sharif">
+                <span class="candidate-photo" style="font-size:2rem;">🦁</span>
+                <span class="candidate-name">Nawaz Sharif</span>
+                <span class="candidate-party">PMLN</span>
+                <span class="candidate-party">Symbol: Lion</span>
+                <a href="vote-confirm.html"><button style="margin-top:12px; width:100%;">Vote</button></a>
+            </div>
+            <div class="candidate-card" style="flex-direction: column; align-items: flex-start;">
+                <img src="imgg.pgg.jpeg" alt="Bilawal Bhutto">
+                <span class="candidate-photo" style="font-size:2rem;">🏹</span>
+                <span class="candidate-name">Bilawal Bhutto</span>
+                <span class="candidate-party">PPP</span>
+                <span class="candidate-party">Symbol: Arrow</span>
+                <a href="vote-confirm.html"><button style="margin-top:12px; width:100%;">Vote</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Online Voting Application &mdash; Contact: info@votingapp.com
+    </div>
+</body>
+</html> 
